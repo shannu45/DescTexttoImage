@@ -43,3 +43,6 @@ def build_stage1_generator():
 
 	stage1_gen = Model(inputs=[input_layer1, input_layer2], outputs=[x, ca]) 
 	return stage1_gen
+
+generator = build_stage1_generator()
+generator.summary()
